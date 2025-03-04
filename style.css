@@ -193,6 +193,9 @@ main {
     main {
         grid-template-columns: 1fr;
     }
+    main > img {
+        margin: 0;
+    }
 }
 
 main > section > h4 {
