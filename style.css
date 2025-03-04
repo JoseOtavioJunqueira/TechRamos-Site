@@ -25,6 +25,14 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+header {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .name img{
     width: 8em;
 }
@@ -40,8 +48,7 @@ a {
 }
 
 nav {
-    max-width: 1200px;
-    margin: auto;
+    width: 100%;
     padding: 2rem 1rem;
     display: flex;
     align-items: center;
@@ -54,6 +61,10 @@ nav {
     display: flex;
     align-items: center;
     gap: 3rem;
+}
+
+.nav-links li{
+    display: inline;
 }
 
 .links > ul > li > a {
@@ -91,17 +102,62 @@ nav {
     background-color: var(--cor2);
 }
 
-@media (max-width: 650px) {
-    header nav {
+.hamburger {
+    color: white;
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.close-btn {
+    color: white;
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        background: #18181b;
+        display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        transition: right 0.4s ease-in-out; 
+        z-index: 5;
     }
 
-    .btn-container {
-        width: 100%;
-        margin-top: 10px;
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        gap: 20px;
     }
 
+    .nav-links li {
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .links.active {
+        right: 0;
+    }
+
+    .links.active .close-btn {
+        display: block;
+    }
 }
 
 main > img {

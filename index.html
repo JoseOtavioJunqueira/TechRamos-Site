@@ -11,8 +11,14 @@
 <body>
     <header>
         <nav>
-            <div class="name"><img src="imgs/Logoremove.png" alt="Logo"></div>
+            <div class="name">
+                <img src="imgs/Logoremove.png" alt="Logo">
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                ☰
+            </div>
             <div class="links">
+                <span class="close-btn" onclick="toggleMenu()">✖</span>
                 <ul class="nav-links">
                     <li><a href="#content">Bem-vindo</a></li>
                     <li><a href="#sobremim">Sobre</a></li>
@@ -21,9 +27,13 @@
                     <li><a href="#contato">Contato</a></li>
                 </ul>
             </div>
-            <a class="btn-conteiner" target="_blank" href="https://wa.me/5517996804466?text=Ol%C3%A1,%20gostaria%20de%20um%20or%C3%A7amento!"><button class="btn">Me contrate</button></a>
+            <a class="btn-conteiner" target="_blank" href="https://wa.me/5517996804466?text=Ol%C3%A1,%20gostaria%20de%20um%20or%C3%A7amento!">
+                <button class="btn">Me contrate</button>
+            </a>
         </nav>
     </header>
+    
+    
 
     <main class="conteiner">
         <section class="content">
@@ -212,6 +222,6 @@
         Copyright &copy; 2025 TechRamos Solutions. All Rights Reserved.
     </div>
 
-    <script src="script.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
