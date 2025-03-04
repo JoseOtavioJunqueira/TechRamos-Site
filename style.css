@@ -27,7 +27,7 @@ body {
 
 header {
     width: 100%;
-    padding: 10px;
+    padding: 10px 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -167,7 +167,7 @@ main > img {
 }
 
 .conteiner {
-    max-width: 1200px;
+    max-width: 80%;
     margin: auto;
     padding: 5rem 2rem;
 }
@@ -199,7 +199,7 @@ main {
 }
 
 main > section > h4 {
-    width: 400px;
+    width: 100%;
     margin-bottom: 1rem;
     color: #ccc;
     font-size: 1rem;
@@ -214,23 +214,6 @@ main > section > h1 {
     line-height: 4rem;
 }
 
-#typing-text {
-    display: inline-block;
-    border-right: 2px solid #fff;
-    padding-right: 5px;
-    white-space: nowrap;
-    overflow: hidden;
-    width: 0;
-}
-
-@media (max-width: 600px) {
-    #typing-text {
-        white-space: pre-wrap;
-        width: 73%;
-        word-wrap: break-word;
-    }
-}
-
 main > section > h1 > span.nome {
     -webkit-text-stroke: 1px white;
 } 
@@ -242,7 +225,7 @@ main > section > p {
 
 @media (max-width: 600px) {
     main > section > p {
-        width: 230px;
+        width: 100%;
     }
 }
 
@@ -346,7 +329,6 @@ h2.page-title {
 }
 
 .sub-header {
-    max-width: 600px;
     margin: auto;
     text-align: center;
     color: #ccc;
@@ -489,8 +471,14 @@ footer .logo{
 }
 
 footer .column .logo > img{
-    max-width: 300px;
+    max-width: 30%;
     margin-bottom: 2rem;
+}
+
+@media (max-width: 650px){
+    footer .column .logo > img{
+        max-width: 70%;
+    }
 }
 
 footer .column p{
@@ -528,7 +516,6 @@ footer .column .socials a:hover {
     text-align: center;
 }
 
-
 .tks {
     color: white;
     font-size: 1.25rem;
@@ -536,7 +523,7 @@ footer .column .socials a:hover {
     background-color: var(--cor2);
     padding: 10px;
     border-radius: 5px;
-    max-width: 455px;
+    max-width: 80%;
 }
 
 ::-webkit-scrollbar {
